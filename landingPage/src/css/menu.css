@@ -1,0 +1,117 @@
+.header nav ul {
+    display: flex;
+}
+
+.header nav ul li a {
+    margin-right: 3px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 2rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.header nav ul a:hover {
+    color: #fff;
+    background: linear-gradient(to right, #6A0DAD, #B913FF);
+}
+
+.ativado a {
+    background: linear-gradient(to right, #6A0DAD, #B913FF);
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.header nav ul .ativado a:hover {
+    color: #711dad;
+    background: linear-gradient(to right, #6A0DAD, #3F0A7D);
+}
+
+.header .menu{
+    display: none;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+}
+
+.header label{
+    display: flex;
+    flex-direction: column;
+}
+
+.header .hamburguer{
+    background-color: #000;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top:25px;
+    left:15px;
+    transition: 0.5s ease-in-out;
+}
+.header .hamburguer::before,
+.header .hamburguer::after{
+    background-color: #000;
+    content:"";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+}
+.header .hamburguer::before{
+    top: -10px;
+}
+.header .hamburguer::after{
+    bottom: -10px;
+}
+
+.header input{
+    display: none;
+}
+
+.header input:checked ~ label .hamburguer{
+    transform: rotate(45deg);
+}
+
+.header input:checked ~ label .hamburguer::before{
+    transform: rotate(90deg);
+    top:0
+}
+
+.header input:checked ~ label .hamburguer::after{
+    transform: rotate(90deg);
+    bottom:0
+}
+
+@media(max-width:900px){
+    .header .menu{
+        display: block;
+    }
+
+    .header nav ul{
+        display: none;
+    }
+
+    .header input:checked ~ ul{
+        display: block;
+    }
+
+    .header nav{
+        position: absolute;
+        top:8px;
+        right: 0;
+        z-index: 1;
+        background-color: #fff;
+    }
+
+    .header nav ul li{
+        padding:20px;
+        width: 180px;
+        text-align: center;
+        display: block;
+    }
+}
+
+
