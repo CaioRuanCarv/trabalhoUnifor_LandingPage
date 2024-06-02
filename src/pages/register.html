@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/login.css">
+
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Register</h2>
+      <form id="registerForm" data-form>
+        <label for="Name">Name:</label>
+        <input type="text" id="name" name="name" required data-name> 
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required data-email>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required data-password>
+        <button type="submit">Register</button>
+        <span id="error" class="error-message"></span>
+        <div class="link">
+          <a href="./login.html" >Login</a> 
+          <a href="../../index.html" >Home</a> 
+        </div>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="../js/controllers/register-controller.js"></script>
+  </body>
+</html>

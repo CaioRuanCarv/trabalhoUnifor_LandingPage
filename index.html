@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/variables.css">
+    <link rel="stylesheet" href="src/css/menu.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    <title>SkillTech Academy</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="javascript:void(0)">
+                <h1 class="logo">SkillTech Academy</h1>
+            </a>
+
+            <nav>
+                <input type="checkbox" id="menu-hamburguer">
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+                <ul>
+                    <li><a href="#about">Cursos</a></li>
+                    
+                    <li class="ativado"><a href="./src/pages/login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <h2>Transforme sua carreira em TI.<br>Comece agora</h2>
+    </section>
+    <section class="about" id="about">
+        <div class="image left first"></div>
+        <div class="item">
+            <h3>Por que escolher a SkillTech Academy?</h3>
+            <p>Na SkillTech, priorizamos a qualidade e a personalização do aprendizado. 
+                Nossos cursos são cuidadosamente elaborados para fornecer uma experiência educacional envolvente e relevante, 
+                sempre atualizada conforme as demandas do mercado. Além disso, 
+                nossa equipe está sempre pronta para fornecer suporte contínuo, 
+                garantindo que você tenha a ajuda necessária em cada etapa do seu aprendizado. 
+                Com opções flexíveis de curso e um compromisso com a excelência, a SkillTech Academy é o seu parceiro ideal para alcançar seus objetivos na área de tecnologia.
+            </p>
+        </div>
+        <div class="item">
+            <h3>FRONT END </h3>
+            <p>Esse curso vai te  ensinar como desenvolver a parte visual e interativa de um site ou aplicativo, focando em HTML, CSS e JavaScript. Você aprenderá a criar layouts atraentes, estilizar elementos e tornar a experiência do usuário fluida e intuitiva.</p>
+            <div class="btn">
+                <a href="" class="btn-know-more">Saiba Mais</a>
+            </div>
+        </div>
+        <div class="image right"></div>
+        <div class="image left"></div>
+        <div class="item">
+            <h3>BACK END</h3>
+            <p>Esse curso vai te ensinar como criar e gerenciar o lado "invisível" de um site ou aplicativo, lidando com o servidor, banco de dados e a lógica por trás das funcionalidades. É essencial para quem quer construir sistemas web robustos e dinâmicos.</p>
+            <div class="btn">
+                <a href="" class="btn-know-more">Saiba Mais</a>
+            </div>
+        </div>
+
+    </section>
+    <section class="services" id="services">
+        <div class="service">
+            <img src="./src/images/logoFront.png" alt="bolinha1">
+            <div class="service-info">
+                <h3>FRONT END</h3>
+                <p> • Trabalham nas partes do site que o usuário vê e interage.<br>
+                    • São responsáveis pela criação e manutenção da interface do usuário de um site
+                    ou aplicativo.<br>
+                    • Trabalham com linguagens como HTML, CSS e Javascript.<br>
+                    • Enquanto codificam, eles têm que pensar sobre a experiência do usuário.</p>
+            </div>
+        </div>
+        <div class="service">
+            <img src="./src/images/logoBack.png" alt="bolinha1">
+            <div class="service-info special-service">
+                <h3>BACK END</h3>
+                <p> • Desenvolvedores backend constroem a estrutura de sistemas web.<br>
+                    • Usam linguagens como Java, Python, C#, Ruby e PHP.<br>
+                    • Lidam com lógica de programação, banco de dados e integrações.<br>
+                    • Garantem segurança do sistema, protegendo dados sensíveis.</p>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <div class="project">
+            <a href="/">
+                <img src="src/images/promBack.jpeg" alt="">
+            </a>
+        </div>
+        <div class="project">
+            <a href="/">
+                <img src="src/images/promFront.jpeg" alt="">
+            </a>
+        </div>
+        <div class="project">
+            <a href="/">
+                <img src="src/images/promBack1.jpeg" alt="">
+            </a>
+        </div>
+        <div class="project">
+            <a href="/">
+                <img src="src/images/promfront1.jpeg" alt="">
+            </a>
+        </div>
+    </section>
+    <footer class="footer__container" id="contact">
+        <div class="footer__links">
+            <a href="/" class="footer__logo">SkillTech Academy</a>
+            <div class="footer__links--wrapper">
+            <a href="#about" class="footer__links__item">Cursos</a>
+            <a href="javascript:void(0)" class="footer__links__item">Support</a>
+            </div>
+        </div>
+        <div class="social__media">
+            <p class="website__right">© 2024 SkillTech Academy. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

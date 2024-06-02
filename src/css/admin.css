@@ -1,0 +1,25 @@
+ion-icon[name="trash-outline"] {
+    color: red;
+}
+
+ion-icon[name="create-outline"] {
+    color: blue
+}
+.title {
+  background: linear-gradient(to right, #6A0DAD, #B913FF);
+  margin: 0.5rem;
+  height: 2rem;
+}
+
+
+
+@import "bootstrap/scss/bootstrap";
+
+
+
+@import "bootstrap-icons/font/bootstrap-icons";
+html,
+body {
+  height: 100%;
+}
+
